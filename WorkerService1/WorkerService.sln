@@ -5,6 +5,15 @@ VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JokeService", "JokeService\JokeService.csproj", "{F276C297-251C-4DA9-B7CD-32911DC19E07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeServiceQuartz", "JokeServiceQuartz\JokeServiceQuartz.csproj", "{F861F9E5-CB02-4BC5-95A2-09170AF7C71E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeService.Common", "JokeService.Common\JokeService.Common.csproj", "{90C01205-839B-44FD-84FE-F4A0BC624F12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0F0A2872-6358-4E76-B4CA-678970BC7497}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +24,14 @@ Global
 		{F276C297-251C-4DA9-B7CD-32911DC19E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F276C297-251C-4DA9-B7CD-32911DC19E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F276C297-251C-4DA9-B7CD-32911DC19E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F861F9E5-CB02-4BC5-95A2-09170AF7C71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F861F9E5-CB02-4BC5-95A2-09170AF7C71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F861F9E5-CB02-4BC5-95A2-09170AF7C71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F861F9E5-CB02-4BC5-95A2-09170AF7C71E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90C01205-839B-44FD-84FE-F4A0BC624F12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90C01205-839B-44FD-84FE-F4A0BC624F12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90C01205-839B-44FD-84FE-F4A0BC624F12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90C01205-839B-44FD-84FE-F4A0BC624F12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

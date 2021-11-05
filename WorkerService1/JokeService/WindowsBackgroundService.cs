@@ -1,3 +1,4 @@
+using JokeService.Common;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
@@ -6,10 +7,11 @@ using System.Threading.Tasks;
 
 public sealed partial class WindowsBackgroundService : BackgroundService
 {
-    private readonly JokeService _jokeService;
+    private readonly JokeClient _jokeService;
     private readonly ILogger<WindowsBackgroundService> _logger;
 
-    public WindowsBackgroundService(JokeService jokeService, ILogger<WindowsBackgroundService> logger)
+    public WindowsBackgroundService(JokeClient jokeService, 
+        ILogger<WindowsBackgroundService> logger)
         => (_jokeService, _logger) = (jokeService, logger);
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)

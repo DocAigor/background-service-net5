@@ -1,11 +1,12 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using JokeService.Common;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 using IHost host = Host.CreateDefaultBuilder(args)    
     .ConfigureServices(services =>
     {
         services.AddHostedService<WindowsBackgroundService>();
-        services.AddHttpClient<JokeService>();
+        services.AddSingleton<JokeClient>();
     })
     .UseWindowsService(options =>
     {
