@@ -1,6 +1,7 @@
 ﻿using ObesityCenterCaserta.Model;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -16,8 +17,8 @@ namespace ObesityCenterCaserta.Reader
             foreach(var paziente in pazienti.Skip(1)){
                 var campiPazienti = paziente.Split(";");
                 listPazienti.Add(new Paziente(campiPazienti[0],
-                    Convert.ToDecimal(campiPazienti[1]),
-                    Convert.ToDecimal(campiPazienti[2])));
+                    Convert.ToDecimal(campiPazienti[1], new CultureInfo("en-GB")),
+                    Convert.ToDecimal(campiPazienti[2], new CultureInfo("en-GB"))));
             }
             return listPazienti;
         }
